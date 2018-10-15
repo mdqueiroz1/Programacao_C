@@ -8,12 +8,12 @@ int main(){
 	
 	for(int i=0;i<10;i++){
 	scanf("%c", &str[i]);
-		if(str[i]==1){
-			cont++;
+		if(str[i]==0){
+			str[i]=1;
 		}
 	}
 	
-	printf("%d",cont);
+	printf("%s", str);
 	
 	return 0;
 }
