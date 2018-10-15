@@ -3,9 +3,9 @@
 
 int main(){
 	
-	char str[10];
+	char str[10],contrario[20];
 	int cont;
-	int i;
+	int i=0;
 	
 	fflush(stdin);
 	gets(str);
@@ -13,12 +13,13 @@ int main(){
 		
 	cont=strlen(str);
 	
-	while (cont>0){
-		printf("%c",str[cont]);
+	while (cont!=0){
+		contrario[i]=str[cont];
 		cont--;
+		i++;
 	}
 	
-	printf("%d",cont);
+	puts(contrario);
 	
 	return 0;
 }
