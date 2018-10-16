@@ -3,19 +3,17 @@
 
 int main(){
 	
-	char str[20];
-	int cont;
+	char str[50];
+	int i;
 	
 	fflush(stdin);
 	gets(str);
 	fflush(stdin);
-		
-	cont=strlen(str);
-	
-	while (cont!=-1){
-		printf("%c",str[cont]);
-		cont--;
+			
+	for(i=0;str[i]!='\0';i++){
+		str[i]=str[i]+1;
 	}
+	printf("%s", str);
 	
 	return 0;
 }
