@@ -15,8 +15,13 @@ int main(){
 	puts("informe um inteiro: ");
 	scanf("%d",px);
 	
-	puts("informe um inteiro: ");
-	scanf
+	puts("informe um float: ");
+	scanf("%f",py);
+	
+	puts("informe um char: ");
+	scanf("%c",pz);
+	
+	printf("%d %.1f %c", *px,*py,*pz);
 	
 	return 0;
 }
